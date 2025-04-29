@@ -44,7 +44,7 @@ const userPoolClient = userPool.addClient("NativeAppClient", {
     generateSecret: false
 });
 const s3Bucket = backend.storage.resources.cfnResources.cfnBucket;
-// s3Bucket.bucketName = `testrefactorstorage66aaab78025d420d93475d1ebbcc7d22b-${AMPLIFY_GEN_1_ENV_NAME}`;
+s3Bucket.bucketName = `testrefactorstorage66aaab78025d420d93475d1ebbcc7d22b-${AMPLIFY_GEN_1_ENV_NAME}`;
 s3Bucket.bucketEncryption = {
     serverSideEncryptionConfiguration: [
         {
@@ -55,4 +55,4 @@ s3Bucket.bucketEncryption = {
         }
     ]
 };
-// Tags.of(backend.stack).add("gen1-migrated-app", "true");
+Tags.of(backend.stack).add("gen1-migrated-app", "true");
