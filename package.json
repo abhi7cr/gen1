@@ -10,7 +10,8 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "aws-amplify": "*"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,5 +36,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@aws-amplify/backend": "*",
+    "@aws-amplify/backend-cli": "*",
+    "@aws-amplify/backend-data": "*",
+    "aws-cdk": "^2",
+    "aws-cdk-lib": "^2",
+    "ci-info": "^3.8.0",
+    "constructs": "^10.0.0",
+    "esbuild": "*",
+    "tsx": "*",
+    "typescript": "^5.0.0",
+    "@types/node": "*"
   }
 }
